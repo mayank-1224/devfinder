@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+p {
+  font-family: "Space Mono", monospace;
+}
+
+.gitInfo {
+  /* border: 1px solid red; */
+  display: flex;
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  margin: 0px 50px 0px 250px;
+  margin-top: -20px;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  justify-content: space-between;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 25px;
+}

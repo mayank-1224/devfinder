@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+.profileCard {
+  /* border: 1px solid red; */
+  margin: 20px;
+  width: 900px;
+  border-radius: 15px;
+  background-color: rgba(31, 42, 72, 255);
+  height: 100%;
+  color: white;
+  font-family: "Inconsolata", monospace;
+}

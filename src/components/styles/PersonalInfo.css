@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+.personalInfo {
+  /* border: 1px solid yellow; */
+  display: flex;
+  background-color: rgba(31, 42, 72, 255);
+  border-radius: 15px;
+  font-family: "Space Mono", monospace;
+}
+.userImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 50px 50px;
+}
+
+.Names {
+  /* border: 1px solid red; */
+  margin: 50px 0px 45px 0px;
+  background-color: rgba(31, 42, 72, 255);
+}
+
+.userName {
+  font-size: 35px;
+  margin-bottom: 10px;
+  background-color: rgba(31, 42, 72, 255);
+}
+
+.userLogin {
+  color: rgba(28, 106, 194, 255);
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: rgba(31, 42, 72, 255);
+}
+.userBio {
+  color: #757d8e;
+  font-size: 17px;
+  background-color: rgba(31, 42, 72, 255);
+}
+
+.userDate {
+  /* border: 1px solid red; */
+  height: 30px;
+  font-size: 17px;
+  margin-top: 60px;
+  margin-left: 120px;
+  background-color: rgba(31, 42, 72, 255);
+}

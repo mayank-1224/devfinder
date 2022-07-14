@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.searchForm {
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  background-color: rgba(31, 42, 72, 255);
+}
+
+.inputField {
+  /* border: 1px solid red; */
+  width: 750px;
+  height: 70px;
+  font-family: "Space Mono", monospace;
+  color: white;
+  border-radius: 15px;
+  border-style: none;
+  margin-left: 15px;
+  font-size: 25px;
+  outline: none;
+  background-color: rgba(31, 42, 72, 255);
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+}
+
+.searchIcon {
+  border: 1px solid red;
+}
+
+.searchButton {
+  /* border: 1px solid red; */
+  background-color: rgba(0, 121, 254, 255);
+  width: 130px;
+  height: 60px;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  font-family: "Space Mono", monospace;
+}
