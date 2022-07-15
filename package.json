@@ -1,7 +1,6 @@
 {
   "name": "devfinder",
   "version": "0.1.0",
-  "homepage": "https://mayank-1224.github.io/devfinder",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
