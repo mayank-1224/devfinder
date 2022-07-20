@@ -14,29 +14,29 @@ const SearchForm = (props) => {
   const [dropDownOpen, setDropDownOpen] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
 
-  useEffect(() => {
-    const urltaken = document.location.search;
-    console.log(urltaken);
-    let urlchecking = new URLSearchParams(urltaken);
-    let check = urlchecking.get("q");
-    console.log(check);
-    if (check != null) {
-      axios
-        .get(`https://api.github.com/users/${check}`)
-        .then((response) => {
-          console.log(response);
-          props.onSubmit(response);
-        })
-        .catch((err) => {
-          console.log(err);
-          // alert("OOPs!!!API not working. Try after sometime");
-        });
-    }
-  }, []);
+  // useEffect(() => {
+  //   const urltaken = document.location.search;
+  //   console.log(urltaken);
+  //   let urlchecking = new URLSearchParams(urltaken);
+  //   let check = urlchecking.get("q");
+  //   console.log(check);
+  //   if (check != null) {
+  //     axios
+  //       .get(`https://api.github.com/users/${check}`)
+  //       .then((response) => {
+  //         console.log(response);
+  //         props.onSubmit(response);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   }
+  // }, []);
 
   useEffect(() => {
     debouncedChangeHandler(searchParams);
   }, [searchParams]);
+
   const debouncedChangeHandler = useCallback(
     debounce((searchParams) => {
       const url = `https://api.github.com/search/users?${searchParams}`;
@@ -54,10 +54,13 @@ const SearchForm = (props) => {
 
   const clickHandler = (e) => {
     setUserInput(e.target.outerText);
+    //console.log(userInput);
+    props.receiveData(userInput);
   };
 
   const changeHandler = (event) => {
     setUserInput(event.target.value);
+    console.log(userInput);
     if (event.target.value.length > 0) {
       setDropDownOpen(true);
     } else {
@@ -67,13 +70,14 @@ const SearchForm = (props) => {
     const param = new URLSearchParams();
     param.set("q", event.target.value);
     setSearchParams(param);
+    setUserInput(event.target.value);
   };
 
   const SubmitHandler = (e) => {
     e.preventDefault();
+    // console.log(userInput);
     props.receiveData(userInput);
     setDropDownOpen(false);
-    setUserInput("");
     setSuggestions({});
   };
   return (
