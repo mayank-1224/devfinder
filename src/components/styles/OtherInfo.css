@@ -1,0 +1,26 @@
+.otherInfo {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  font-size: 1.2rem;
+}
+
+.sec1 {
+  /* border: 1px solid red; */
+  margin-left: 10rem;
+}
+
+.sec2 {
+  margin-left: 5rem;
+}
+
+@media (max-width: 600px) {
+  .otherInfo {
+    flex-direction: column;
+  }
+
+  .sec2,
+  .sec1 {
+    margin: 0;
+  }
+}

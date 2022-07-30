@@ -1,0 +1,18 @@
+img {
+  width: 15px;
+  height: 15px;
+}
+
+.buttonImg {
+  width: 30px;
+  height: 30px;
+  background-color: #141c2f;
+}
+
+.themeButton {
+  border-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
